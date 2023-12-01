@@ -1,10 +1,10 @@
 # [level unrated] 배열의 평균값 - 120817 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120817?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120817?language=javascript) 
 
 ### 성능 요약
 
-메모리: 73.7 MB, 시간: 0.02 ms
+메모리: 33.4 MB, 시간: 0.05 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 12월 5일 21:17:40
+2023년 12월 5일 21:25:47
 
 ### 문제 설명
 
