@@ -1,10 +1,10 @@
 # [level unrated] 문자열 붙여서 출력하기 - 181946 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181946) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181946?language=javascript) 
 
 ### 성능 요약
 
-메모리: 69 MB, 시간: 146.47 ms
+메모리: 32.3 MB, 시간: 44.34 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 12월 2일 20:7:49
+2023년 12월 2일 20:21:58
 
 ### 문제 설명
 
