@@ -1,1 +1,3 @@
-const solution = String;
+function solution(n) {
+    return String(n);
+}
