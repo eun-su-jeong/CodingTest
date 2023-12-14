@@ -1,10 +1,10 @@
 # [level unrated] 대문자로 바꾸기 - 181877 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181877) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181877?language=java) 
 
 ### 성능 요약
 
-메모리: 33.5 MB, 시간: 0.02 ms
+메모리: 77 MB, 시간: 0.03 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 12월 4일 14:36:47
+2023년 12월 4일 14:38:31
 
 ### 문제 설명
 
