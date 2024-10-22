@@ -3,7 +3,7 @@ function solution(num_list) {
     let resultEven = 0;
     
     for(let i = 0; i < num_list.length; i++){
-        if(i % 2 == 0) {
+        if(i % 2 === 0) {
             resultEven += num_list[i];
         }
         else{
