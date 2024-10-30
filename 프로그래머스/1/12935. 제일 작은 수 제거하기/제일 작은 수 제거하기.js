@@ -9,12 +9,14 @@ function solution(arr) {
         }
     }
     
-    // 최소값이 아닌 값들을 answer 리스트에 담기
-    for(let j = 0; j < arr.length; j++){
-        if (arr[j] != minNum) {
-            answer.push(arr[j]);    
-        }
-    }
+    // // 최소값이 아닌 값들을 answer 리스트에 담기
+    // for(let j = 0; j < arr.length; j++){
+    //     if (arr[j] != minNum) {
+    //         answer.push(arr[j]);    
+    //     }
+    // }
+    
+    answer = arr.filter(num => num !== minNum);
 
     // 아무것도 안 담겼을 때
     if(answer.length == 0) {
