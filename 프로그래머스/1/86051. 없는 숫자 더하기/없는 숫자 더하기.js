@@ -1,9 +1,8 @@
 function solution(numbers) {
-    let total = 0;
-    const sum = numbers.reduce((sum,digit) => sum + digit);
+    let answer = 0;
     
     for(let i = 0; i < 10; i++){
-        total += i;
+        if(!numbers.includes(i)) answer += i;
     }
-    return total - sum;
+    return answer;
 }
