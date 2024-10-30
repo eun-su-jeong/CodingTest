@@ -3,9 +3,11 @@ function solution(arr) {
     let answer = [];
     // 최소값 찾기
     let minNum = arr[0];
+    let idx = 0;
     for(let i = 1; i < arr.length; i++){
         if(minNum > arr[i]) {
             minNum = arr[i];
+            idx = i;
         }
     }
     
@@ -16,11 +18,13 @@ function solution(arr) {
     //     }
     // }
     
-    answer = arr.filter(num => num !== minNum);
+    // answer = arr.filter(num => num !== minNum);
 
+    answer = [...arr];
+    answer.splice(idx, 1);
     // 아무것도 안 담겼을 때
-    if(answer.length == 0) {
-        answer.push(-1);
+    if(answer.length <= 1) {
+        return [-1];
     }
     
     return answer; 
