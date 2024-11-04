@@ -1,15 +1,13 @@
 function solution(num_list) {
-    let resultOdd = 0;
-    let resultEven = 0;
+    let odd = 0;
+    let even = 0;
     
     for(let i = 0; i < num_list.length; i++){
-        if(i % 2 === 0) {
-            resultEven += num_list[i];
+        if(i % 2 == 0){
+            even += num_list[i];
+        }else{
+            odd += num_list[i]
         }
-        else{
-            resultOdd += num_list[i];
-        }
-    }
-    
-    return Math.max(resultOdd, resultEven);
+    }  
+    return Math.max(odd, even);
 }
