@@ -1,6 +1,5 @@
 function solution(my_string, num1, num2) {
-    let arr = [];
-    my_string = my_string.split('');
-    [my_string[num1], my_string[num2]] = [my_string[num2], my_string[num1]];
-    return my_string.join('');
+    let string = my_string.split('');
+    [string[num1], string[num2]] = [string[num2], string[num1]];    
+    return string.join('');
 }
