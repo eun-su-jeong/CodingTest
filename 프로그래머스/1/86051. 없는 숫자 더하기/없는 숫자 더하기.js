@@ -1,8 +1,9 @@
 function solution(numbers) {
-    let answer = 0;
-    
+    let result = 0;
     for(let i = 0; i < 10; i++){
-        if(!numbers.includes(i)) answer += i;
+        if(!numbers.includes(i)){
+            result += i;
+        }
     }
-    return answer;
+    return result;
 }
