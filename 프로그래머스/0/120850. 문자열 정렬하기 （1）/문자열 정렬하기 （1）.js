@@ -1,10 +1,8 @@
 function solution(my_string) {
-    var answer = [];
+    let answer = [];
     
-    answer= Array.from(my_string)
-            .filter(char => !isNaN(char) && char != ' ')
-            .map(Number)
-            .sort((a, b) => a - b);
-    
-    return answer;
+    return Array.from(my_string)
+        .filter(char => !isNaN(char))
+        .map(Number)
+        .sort((a,b) => a - b);
 }
