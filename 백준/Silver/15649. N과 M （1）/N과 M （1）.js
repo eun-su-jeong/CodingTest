@@ -5,28 +5,26 @@ const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 
 // 첫 번째 줄에서 N과 M 추출
 const [N, M] = input[0].split(' ').map(Number);
-//N 수열
-let arr = [];
 
-for(let i = 1; i <= M; i++){
-    arr.push(0);
+let result = [];
+let arr = Array(M).fill(0);
+
+dfs(0);
+
+function dfs(index) {
+    if (index === M) {
+        result.push(arr.join(' '));
+        return;
+    }
+
+    for (let i = 1; i <= N; i++) {
+        if (!arr.includes(i)) { // visited 배열 대신 arr에 포함 여부로 중복 방지
+            arr[index] = i;
+            dfs(index + 1);
+            arr[index] = 0; // 복구
+        }
+    }
 }
 
-let visited = new Array(N).fill(false);
-
-dfs(0, arr, visited, N, M);
-function dfs(index, arr, visited, N, M){
-     if(index === M){
-         console.log(arr.join(' '));
-         return;
-     }
-
-     for (let i = 0; i < N; i++){
-         if (!visited[i]) {
-            arr[index] = i + 1;
-            visited[i] = true;
-            dfs(index + 1, arr, visited, N, M);
-            visited[i] = false;
-         }
-     }
-}
+// 최종 결과 한 번에 출력
+console.log(result.join('\n'));
