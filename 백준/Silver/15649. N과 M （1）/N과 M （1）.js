@@ -6,25 +6,21 @@ const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 // 첫 번째 줄에서 N과 M 추출
 const [N, M] = input[0].split(' ').map(Number);
 
-let result = [];
 let arr = Array(M).fill(0);
+let result = [];
 
 dfs(0);
-
-function dfs(index) {
-    if (index === M) {
+function dfs(index){
+    if(index === M){
         result.push(arr.join(' '));
         return;
     }
-
-    for (let i = 1; i <= N; i++) {
-        if (!arr.includes(i)) { // visited 배열 대신 arr에 포함 여부로 중복 방지
+    for(let i = 1; i <= N; i++){
+        if(!arr.includes(i)){
             arr[index] = i;
             dfs(index + 1);
-            arr[index] = 0; // 복구
+            arr[index] = 0;
         }
     }
 }
-
-// 최종 결과 한 번에 출력
 console.log(result.join('\n'));
