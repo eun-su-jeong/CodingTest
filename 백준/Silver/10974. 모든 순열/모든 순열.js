@@ -8,6 +8,7 @@ const N = Number(input[0]);
 
 let arr = [];
 let result = [];
+let visited = new Array(N).fill(0);
 
 dfs(0);
 function dfs(index) {
@@ -16,10 +17,11 @@ function dfs(index) {
 		return;
 	}
 	for (let i = 1; i <= N; i++) {
-		if (!arr.includes(i)) {
+		if (!visited[i]) {
 			arr[index] = i;
+			visited[i] = 1;
 			dfs(index + 1);
-			arr[index] = 0;
+			visited[i] = 0;
 		}
 	}
 }
