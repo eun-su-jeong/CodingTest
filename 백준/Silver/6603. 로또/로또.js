@@ -6,17 +6,18 @@ const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 let sArr = [];
 let K = -1;
 let cards = [];
+let result = [];
 for (let i = 0; i < input.length - 1; i++) {
 	cards = input[i].split(' ').map(Number);
 	K = cards[0];
 	cards.splice(0, 1);
 	dfs(0, 0);
-	console.log();
+	result.push('');
 }
 
 function dfs(index, start) {
 	if (index == 6) {
-		console.log(sArr.join(' '));
+        result.push(sArr.join(' '));
 		return;
 	}
 
@@ -25,3 +26,5 @@ function dfs(index, start) {
 		dfs(index + 1, i + 1);
 	}
 }
+
+console.log(result.join('\n'));
