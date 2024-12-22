@@ -15,6 +15,8 @@ for (let i = 0; i < input.length - 1; i++) {
 	result.push('');
 }
 
+console.log(result.join('\n'));
+
 function dfs(index, start) {
 	if (index == 6) {
         result.push(sArr.join(' '));
@@ -26,5 +28,3 @@ function dfs(index, start) {
 		dfs(index + 1, i + 1);
 	}
 }
-
-console.log(result.join('\n'));
