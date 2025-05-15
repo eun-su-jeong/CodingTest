@@ -11,7 +11,6 @@ rl.on('line', function (line) {
 }).on('close', function () {
     str1 = input[0];
     str2 = input[1];
-    
     result = str1 + str2;
     console.log(result);
 });
