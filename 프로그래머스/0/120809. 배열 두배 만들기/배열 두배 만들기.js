@@ -1,4 +1,10 @@
 function solution(numbers) {
-   return numbers.map(num => num * 2);
+    const result = [];
+
+    numbers.forEach(num => {
+        result.push(num * 2);
+    });
+
+    return result;
 }
   
